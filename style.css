@@ -1,0 +1,51 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f5f5f5;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Part 1: CSS Transitions and Animations */
+
+/* Button with hover transition */
+.animated-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.animated-btn:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Box with animation */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+/* CSS Keyframes for animation */
+@keyframes moveBox {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); background: lime; }
+  100% { transform: translateY(0); background: coral; }
+}
+
+.animate {
+  animation: moveBox 2s ease-in-out forwards;
+}
